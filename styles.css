@@ -202,16 +202,17 @@ p {
     font-family: "Arial", Arial, Sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none;
 }
+
 
 .tile__img {
     width: 250px;
     height: 140.625px;
     -o-object-fit: cover;
     object-fit: cover;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 
@@ -226,6 +227,7 @@ p {
     opacity: 0;
     background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
     transition: 450ms opacity;
+    
 }
 
     .tile__details:after,
@@ -263,14 +265,20 @@ p {
         
     }
 
+    .seite:hover{
+        margin-left: 60px;
+    }
+
 .tile:hover .tile__details {
     opacity: 1;
+    
 }
 
 .tile__title {
     position: absolute;
     bottom: 0;
     padding: 10px;
+
 }
 
 .row__inner:hover {
@@ -301,9 +309,9 @@ p {
     margin-left: 40px;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none;
+
 }
 
 .serien {
@@ -314,9 +322,13 @@ p {
     margin-left: 40px;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none;
+}
+
+.anmeldenbtn:hover {
+    color: #94780c;
+    
 }
 
 .textfeld {
@@ -350,6 +362,8 @@ img.avatar {
     padding: 16px;
     border-radius: 0px 0px 20px 20px;
 }
+
+
 
 span.psw {
     float: right;
@@ -410,7 +424,7 @@ span.ang {
     background-color: #70cbff;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 5px 0;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -418,7 +432,7 @@ span.ang {
     border-radius: 10px;
     border: 3px solid #197bb3;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .button1:hover {

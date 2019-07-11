@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <title>netstream.to</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -13,10 +13,10 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="" class="active"><img src="images/logov2.png" height="25" width="100" style="position:center; margin-bottom: -10px; margin-top: -10px" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+        <a href="" class="active" ><img src="images/logov2.png" height="25" width="100" style="position:center; margin-bottom: -10px; margin-top: -10px" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
         <a href="#news">Serien</a>
         <a href="#contact">Filme</a>
-        <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto; color: #ffce0a">Anmelden</a>
+        <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto; color: #ffce0a" class="anmeldenbtn">Anmelden</a>
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Suche..." name="search">
@@ -65,7 +65,7 @@
     <div class="row">
         <div class="row__inner">
 
-            <div class="tile">
+            <div class="tile seite">
                 <div class="tile__media">
                     <iframe class="tile__img" id="myFrame2" src="" hidden frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <img class="tile__img" id="myBild3" src="images/avatarcover.png" alt="" />
@@ -92,7 +92,7 @@
                     <iframe class="tile__img" id="myFrame3" src="" hidden frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <img class="tile__img" id="myBild4" src="images/endgamecover.png" alt="" />
                 </div>
-                <div class="tile__details" onmouseover="myFunction('myFrame3', 'myBild4','https://www.youtube.com/embed/TcMBFSGVi1c?rel=0&amp;autoplay=1&mute=1&controls=0&loop=1&modestbranding&showinfo=0')" onmouseout="myFunctionLeave('myFrame3', 'myBild4')">
+                <div class="tile__details" onmouseover="myFunction('myFrame3', 'myBild4','https://www.youtube.com/embed/TcMBFSGVi1c?rel=0&amp;autoplay=1&mute=1&controls=0&loop=1&modestbranding&showinfo=0&playlist=TcMBFSGVi1c')" onmouseout="myFunctionLeave('myFrame3', 'myBild4')">
                     <div class="tile__title">
                         Avengers: Endgame
                     </div>
@@ -103,9 +103,31 @@
                     <iframe class="tile__img" id="myFrame1" src="" hidden frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <img class="tile__img" id="myBild2" src="images/cover2.png" alt="" />
                 </div>
-                <div class="tile__details" onmouseover="myFunction('myFrame1', 'myBild2', 'https://www.youtube.com/embed/70xgdry2TNw?rel=0&amp;autoplay=1&mute=1&controls=0&loop=1&modestbranding&showinfo=0&playlist=70xgdry2TNw')" onmouseout="myFunctionLeave('myFrame1', 'myBild2')">
+                <div class="tile__details" onmouseover="myFunction('myFrame1', 'myBild2', 'https://www.dropbox.com/s/rr2ktygecxssl5z/videoplayback.mp4?raw=1')" onmouseout="myFunctionLeave('myFrame1', 'myBild2')">
                     <div class="tile__title">
                         Breaking Bad
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile__media">
+                    <iframe class="tile__img" id="myFrame4" src="" hidden frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img class="tile__img" id="myBild5" src="images/twdcover.png" alt="" />
+                </div>
+                <div class="tile__details" onmouseover="myFunction('myFrame4', 'myBild5', 'https://www.youtube.com/embed/R1v0uFms68U?rel=0&amp;autoplay=1&mute=1&controls=0&loop=1&modestbranding&showinfo=0&playlist=R1v0uFms68U')" onmouseout="myFunctionLeave('myFrame4', 'myBild5')">
+                    <div class="tile__title">
+                        The Walking Dead
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile__media">
+                    <iframe class="tile__img" id="myFrame5" src="" hidden frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img class="tile__img" id="myBild6" src="images/prisonbreakcover.png" alt="" />
+                </div>
+                <div class="tile__details" onmouseover="myFunction('myFrame5', 'myBild6', 'https://www.youtube.com/embed/tQp1n28DoK8?rel=0&amp;autoplay=1&mute=1&controls=0&loop=1&modestbranding&showinfo=0&playlist=tQp1n28DoK8')" onmouseout="myFunctionLeave('myFrame5', 'myBild6')">
+                    <div class="tile__title">
+                        Prison Break
                     </div>
                 </div>
             </div>
@@ -122,7 +144,7 @@
     <div class="row">
         <div class="row__inner">
 
-            <div class="tile">
+            <div class="tile seite">
                 <div class="tile__media">
                     <img class="tile__img" src="images/cover1.png" alt="" />
                 </div>
@@ -209,7 +231,7 @@
     }
 
     function myFunctionLeave(name, bild) {
-        
+        document.getElementById(name).src = "";
 
         var x = document.getElementById(bild);
         var y = document.getElementById(name);
