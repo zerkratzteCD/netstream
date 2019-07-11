@@ -168,7 +168,7 @@ p {
 }
 
 .row {
-    overflow:auto;
+    
     width: 90%;
     position: center;
     margin-left: 20px;
@@ -252,22 +252,29 @@ p {
         z-index: 1;
     }
 
+
+
     .tile__details:before {
-        content: '▶';
         left: 0;
         width: 100%;
         font-size: 30px;
-        margin-left: 7px;
-        margin-top: -18px;
+        margin-left: 121px;
+        margin-top: -8px;
         text-align: center;
         z-index: 2;
         color: #197bb3;
-        
+        width: 20px;
+        height: 20px;
+        background-image: url("images/playicon.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .seite:hover{
         margin-left: 60px;
     }
+
 
 .tile:hover .tile__details {
     opacity: 1;
