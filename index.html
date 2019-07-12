@@ -13,10 +13,10 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="" class="active" ><img src="images/logov2.png" height="25" width="100" style="position:center; margin-bottom: -10px; margin-top: -10px" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+        <a href="" class="active"><img src="images/logov2.png" height="25" width="100" style="position:center; margin-bottom: -10px; margin-top: -10px" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
         <a href="#news">Serien</a>
         <a href="#contact">Filme</a>
-        <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto; color: #ffce0a" class="anmeldenbtn">Anmelden</a>
+        <a href="user/login" class="anmeldenbtn"  onmouseover="this.style.color='#ffd52e'" onmouseout="this.style.color='#f2f2f2'">Anmelden</a>
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Suche..." name="search">
@@ -51,15 +51,17 @@
                     <input type="checkbox" checked="checked" name="remember" style="margin-top: 10px;"> <span class="ang">angemeldet bleiben</span>
                 </label>
             </div>
-                
-                
-            
+
+
+
         </form>
     </div>
 
 
     <div class="derzeitbeliebt">
         DERZEIT BELIEBT
+        <span class="prev"style="margin-left: 10px;"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+        <span class="next" ><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
     </div>
 
     <div class="row">
@@ -143,16 +145,20 @@
                 </div>
             </div>
 
-
-
+            
+                
+            
         </div>
-        
-    </div>
 
+        
+
+    </div>
 
 
     <div class="serien">
         SERIEN
+        <span class="prev" style="margin-left: 10px;"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+        <span class="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
     </div>
 
     <div class="row">
@@ -176,6 +182,46 @@
                 <div class="tile__details">
                     <div class="tile__title">
                         Breaking Bad
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile__media">
+                    <img class="tile__img" src="images/cover1.png" alt="" />
+                </div>
+                <div class="tile__details">
+                    <div class="tile__title">
+                        Prison Break
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile__media">
+                    <img class="tile__img" src="images/cover1.png" alt="" />
+                </div>
+                <div class="tile__details">
+                    <div class="tile__title">
+                        Prison Break
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile__media">
+                    <img class="tile__img" src="images/cover1.png" alt="" />
+                </div>
+                <div class="tile__details">
+                    <div class="tile__title">
+                        Prison Break
+                    </div>
+                </div>
+            </div>
+            <div class="tile">
+                <div class="tile__media">
+                    <img class="tile__img" src="images/cover1.png" alt="" />
+                </div>
+                <div class="tile__details">
+                    <div class="tile__title">
+                        Prison Break
                     </div>
                 </div>
             </div>
@@ -258,7 +304,28 @@
         }
     }
 
-    
+    // Pagination
+    var slides = document.querySelectorAll(".tile");
+
+    var sliderContent = document.querySelector(".row__inner");
+    var prev = document.querySelector(".prev"),
+        next = document.querySelector(".next");
+    var pos = 0;
+    next.addEventListener("click", function () {
+        if (pos < Math.ceil(slides.length / 5) - 1) {
+            pos++;
+            console.log(pos);
+            sliderContent.style.transform = "translateX(-" + (pos * 100) + "%)";
+        }
+    });
+
+    prev.addEventListener("click", function () {
+        if (pos > 0) {
+            pos--;
+            console.log(pos);
+            sliderContent.style.transform = "translateX(-" + (pos * 100) + "%)";
+        }
+    });
 
     
 </script>
