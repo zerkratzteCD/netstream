@@ -165,12 +165,23 @@ span.psw {
     margin: 5% auto auto auto; /* 5% from the top, 15% from the bottom and centered */
     border: 3px solid white;
     width: 400px; /* Could be more or less, depending on screen size */
-    height: 450px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px #1e1e1e;
+    height: 500px;
+    
 }
 
+.hilfebtn {
+    color: white;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 2px;
+    transition: ease-in-out 0.2s;
+}
 
+    .hilfebtn:hover {
+        color: #70cbff;
+    }
 
 /* Add Zoom Animation */
 .animate {
@@ -231,7 +242,7 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 450px) {
     span.psw {
         display: block;
         float: none;
@@ -239,6 +250,20 @@ span.psw {
 
     .cancelbtn {
         width: 100%;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+        background: -webkit-linear-gradient(#{$randomAngle}deg, #197bb3, #197bb3);
+        background: linear-gradient( #197bb3, #197bb3);
+    }
+
+    .modal-content {
+        border: 3px solid #197bb3;
+        width: 90%; /* Could be more or less, depending on screen size */
+        height: 500px;
     }
 }
 
@@ -252,10 +277,13 @@ input[type=text], input[type=password] {
     border-radius: 10px;
     font-size: 20px;
     outline: none;
+    background-color: #70CBFF;
+    color: white;
+    font-weight: bold;
 }
 
 .loginbtn {
-    background-color: #70cbff;
+    background-color: #24AFFF;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -266,7 +294,8 @@ input[type=text], input[type=password] {
     font-size: 20px;
     transition: ease-in-out 0.2s;
     outline: none;
-    box-shadow: 0px 0px 0px 3px white inset;
+    font-weight: bold;
+    margin-top: 30px;
 }
     .loginbtn:hover {
         background-color: #197bb3;
