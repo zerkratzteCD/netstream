@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>netstream.to | Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="../../" class="active"><img src="../../images/logov2.png" height="25" width="100" style="position:center; margin-bottom: -10px; margin-top: -10px" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+        <a style="color: #b3e3ff; cursor: default" ; user-select: none;>Login</a>
+        <a href="#contact">Registrieren</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunctionResp()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+
+    
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                
+                <img src="../../images/useravatar.svg" alt="Avatar" class="avatar" style="user-select: none;">
+            </div>
+
+            <div class="container">
+
+                <input type="text" placeholder="Benutzername" name="uname" required>
+
+
+                <input type="password" placeholder="Passwort" name="psw" required> 
+
+       
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> <a style="color: white; font-weight: bold;">Angemeldet bleiben</a>
+                </label>
+
+                <button type="submit" style="float:right; width: 62%; height: 50px;" class="loginbtn">Login</button>
+
+                <button type="button" href="../../" class="cancelbtn" style="float: left; width: 35%; height: 50px;">abbrechen</button>
+
+            </div>
+
+        </form>
+    
+
+
+</body>
+
+</html>
+
+<script>
+
+    function hover(element) {
+        element.setAttribute('src', '../../images/logov2hover.png');
+    }
+
+    function unhover(element) {
+        element.setAttribute('src', '../../images/logov2.png');
+    }
+
+    function myFunctionResp() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+
+
+    }
+
+</script>
+
