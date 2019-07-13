@@ -8,15 +8,14 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="" class="active"><img src="images/logov2.png" height="25" width="100" style="position:center; margin-bottom: -10px; margin-top: -10px" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+        <a href="" class="active"><img src="images/logov2.png" height="25" width="100" style="position:center;" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
         <a href="#news">Serien</a>
         <a href="#contact">Filme</a>
-        <a href="user/login" class="anmeldenbtn"  onmouseover="this.style.color='#ffd52e'" onmouseout="this.style.color='#f2f2f2'">Anmelden</a>
+        <a href="user/login" class="anmeldenbtn" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color='#f2f2f2'">Anmelden</a>
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Suche..." name="search">
@@ -26,7 +25,6 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunctionResp()">
             <i class="fa fa-bars"></i>
         </a>
-
     </div>
 
     <div id="id01" class="modal">
@@ -48,20 +46,16 @@
 
                 <button class="button1" type="submit">Anmelden</button>
                 <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-top: 10px;"> <span class="ang">angemeldet bleiben</span>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-top: 10px; user-select: none;"> <span class="ang">angemeldet bleiben</span>
                 </label>
             </div>
-
-
-
         </form>
     </div>
 
-
     <div class="derzeitbeliebt">
         DERZEIT BELIEBT
-        <span class="prev"style="margin-left: 10px;"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
-        <span class="next" ><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+        <span class="prev" style="margin-left: 10px;"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+        <span class="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
     </div>
 
     <div class="row">
@@ -72,10 +66,11 @@
                     <iframe class="tile__img" id="myFrame2" src="" hidden frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <img class="tile__img" id="myBild3" src="images/avatarcover.png" alt="" />
                 </div>
-                <div class="tile__details" onmouseover="myFunction('myFrame2', 'myBild3','https://www.youtube.com/embed/5PSNL1qE6VY?rel=0&amp;autoplay=1&mute=1&showinfo=0&controls=0&modestbranding=1&autohide=1&loop=1')" onmouseout="myFunctionLeave('myFrame2', 'myBild3')">
+                <div class="tile__details" onmouseover="myFunction('myFrame2', 'myBild3','https://www.youtube.com/embed/crEU1pcoWiw?rel=0&amp;autoplay=1&mute=1&showinfo=0&controls=0&modestbranding=1&autohide=1&loop=1&playlist=crEU1pcoWiw')" onmouseout="myFunctionLeave('myFrame2', 'myBild3')">
                     <div class="tile__title">
                         Avatar
                     </div>
+                    <img src="images/loading.svg" id="loadingc" class="loadings" style=""> <img />
                 </div>
             </div>
             <div class="tile">
@@ -83,10 +78,11 @@
                     <iframe class="tile__img" id="myFrame" src="" hidden frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <img class="tile__img" id="myBild1" src="images/infinitywarcover.png" alt="" />
                 </div>
-                <div class="tile__details" onmouseover="myFunction('myFrame', 'myBild1','https://www.youtube.com/embed/6ZfuNTqbHE8?rel=0&amp;autoplay=1&mute=1&showinfo=0&controls=0&modestbranding=1&autohide=1&loop=1')" onmouseout="myFunctionLeave('myFrame', 'myBild1')">
+                <div class="tile__details" onmouseover="myFunction('myFrame', 'myBild1','https://www.youtube.com/embed/6ZfuNTqbHE8?rel=0&amp;autoplay=1&mute=1&showinfo=0&controls=0&modestbranding=1&autohide=1&loop=1&playlist=6ZfuNTqbHE8')" onmouseout="myFunctionLeave('myFrame', 'myBild1')">
                     <div class="tile__title">
                         Avengers: Infinity War
                     </div>
+                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
                 </div>
             </div>
             <div class="tile">
@@ -98,6 +94,7 @@
                     <div class="tile__title">
                         Avengers: Endgame
                     </div>
+                    <img src="images/loading.svg" id="loadingc" class="loadings" style=""> <img />
                 </div>
             </div>
             <div class="tile">
@@ -105,10 +102,12 @@
                     <iframe class="tile__img" id="myFrame1" src="" hidden frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <img class="tile__img" id="myBild2" src="images/cover2.png" alt="" />
                 </div>
-                <div class="tile__details" onmouseover="myFunction('myFrame1', 'myBild2', 'https://www.dropbox.com/s/rr2ktygecxssl5z/videoplayback.mp4?raw=1')" onmouseout="myFunctionLeave('myFrame1', 'myBild2')">
+                <div class="tile__details" onmouseover="myFunction('myFrame1', 'myBild2', 'https://www.youtube.com/embed/FVrKGl3Xli8?rel=0&amp;autoplay=1&mute=1&controls=0&loop=1&modestbranding&showinfo=0&playlist=FVrKGl3Xli8')" onmouseout="myFunctionLeave('myFrame1', 'myBild2')">
                     <div class="tile__title">
                         Breaking Bad
                     </div>
+                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
+
                 </div>
             </div>
             <div class="tile">
@@ -120,6 +119,8 @@
                     <div class="tile__title">
                         The Walking Dead
                     </div>
+                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
+
                 </div>
             </div>
             <div class="tile">
@@ -131,6 +132,8 @@
                     <div class="tile__title">
                         Prison Break
                     </div>
+                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
+
                 </div>
             </div>
             <div class="tile">
@@ -142,18 +145,12 @@
                     <div class="tile__title">
                         Game of Thrones
                     </div>
+                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
+
                 </div>
             </div>
-
-            
-                
-            
         </div>
-
-        
-
     </div>
-
 
     <div class="serien">
         SERIEN
@@ -235,14 +232,9 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
-
 </body>
-
 </html>
 
 <script>
@@ -257,16 +249,14 @@
         }
     }
 
-
-	function myFunctionResp() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
+    function myFunctionResp() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
         }
 
-        
     }
 
     function hover(element) {
@@ -278,30 +268,41 @@
     }
 
     function myFunction(name, bild, quelle) {
+
+        
+        var loadingcc = document.getElementById('loadingc');
+        loadingcc.style.display = "block";
         document.getElementById(name).src = quelle;
 
         var x = document.getElementById(bild);
         var y = document.getElementById(name);
-        if (x.style.display === "none") {
-            x.style.display = "block";
 
-        } else {
+        timer = setTimeout(() => {
+
             x.style.display = "none";
             y.style.display = "block";
-        }
+            loadingcc.style.display = "none";
+
+        }, 4200);
+
     }
 
     function myFunctionLeave(name, bild) {
-        document.getElementById(name).src = "";
+        var loadingcc = document.getElementById('loadingc');
+        loadingcc.style.display = "none";
+        clearTimeout(timer);
 
-        var x = document.getElementById(bild);
-        var y = document.getElementById(name);
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
+        timer = setTimeout(() => {
+
+            document.getElementById(name).src = "";
+
+            var x = document.getElementById(bild);
+            var y = document.getElementById(name);
+
             x.style.display = "block";
             y.style.display = "none";
-        }
+        }, 1);
+
     }
 
     // Pagination
@@ -326,6 +327,4 @@
             sliderContent.style.transform = "translateX(-" + (pos * 100) + "%)";
         }
     });
-
-    
 </script>
