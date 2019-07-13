@@ -70,7 +70,6 @@
                     <div class="tile__title">
                         Avatar
                     </div>
-                    <img src="images/loading.svg" id="loadingc" class="loadings" style=""> <img />
                 </div>
             </div>
             <div class="tile">
@@ -82,7 +81,6 @@
                     <div class="tile__title">
                         Avengers: Infinity War
                     </div>
-                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
                 </div>
             </div>
             <div class="tile">
@@ -94,7 +92,6 @@
                     <div class="tile__title">
                         Avengers: Endgame
                     </div>
-                    <img src="images/loading.svg" id="loadingc" class="loadings" style=""> <img />
                 </div>
             </div>
             <div class="tile">
@@ -106,7 +103,6 @@
                     <div class="tile__title">
                         Breaking Bad
                     </div>
-                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
                 </div>
             </div>
             <div class="tile">
@@ -118,7 +114,6 @@
                     <div class="tile__title">
                         The Walking Dead
                     </div>
-                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
                 </div>
             </div>
             <div class="tile">
@@ -130,7 +125,6 @@
                     <div class="tile__title">
                         Prison Break
                     </div>
-                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
                 </div>
             </div>
             <div class="tile">
@@ -142,7 +136,6 @@
                     <div class="tile__title">
                         Game of Thrones
                     </div>
-                    <img src="images/loading.svg" id="loadingc" class="loadings"> <img />
                 </div>
             </div>
         </div>
@@ -265,8 +258,6 @@
 
     function myFunction(name, bild, quelle) {
 
-        var loadingcc = document.getElementById('loadingc');
-        loadingcc.style.display = "block";
         document.getElementById(name).src = quelle;
 
         var x = document.getElementById(bild);
@@ -278,16 +269,14 @@
             y.style.display = "block";
             loadingcc.style.display = "none";
 
-        }, 4200);
+        }, 1500);
 
     }
 
     function myFunctionLeave(name, bild) {
         clearTimeout(timer);
         document.getElementById(name).src = "";
-        var loadingcc = document.getElementById('loadingc');
-        loadingcc.style.display = "none";
-        
+   
 
         timer = setTimeout(() => {
 

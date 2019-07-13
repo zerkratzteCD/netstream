@@ -231,7 +231,7 @@ p {
 
 .tile__img {
     width: 250px;
-    height: 140.625px;
+    height: 140.4px;
     -o-object-fit: cover;
     object-fit: cover;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -474,12 +474,7 @@ span.ang {
         cursor: pointer;
     }
 
-.loadings {
-    height: 20px;
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
-}
+
 
 /* Add Zoom Animation */
 .animate {
