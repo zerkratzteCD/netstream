@@ -10,7 +10,6 @@ body {
     background: linear-gradient( #333333, #1d1e22);
 }
 
-
 .topnav {
     overflow: hidden;
     background-color: #197BB3;
@@ -42,8 +41,6 @@ body {
             transition-duration: 0.2s;
         }
 
-
-
     .topnav .search-container {
         float: right;
         color: white;
@@ -61,8 +58,6 @@ body {
         outline: none;
     }
 
-
-
     .topnav .search-container button {
         float: right;
         padding: 6px 10px;
@@ -79,8 +74,6 @@ body {
         outline: none;
     }
 
-      
-
     .topnav .icon {
         display: none;
     }
@@ -94,7 +87,6 @@ body {
         float: right;
         display: block;
     }
-
 }
 
 @media screen and (max-width: 700px) {
@@ -120,44 +112,49 @@ body {
             text-align: left;
         }
 
-
-
     .topnav input[type=text] {
         border-radius: 5px;
         width: 97%;
         margin-left: 1.5%;
         outline-width: 0;
     }
-
-
 }
-
 
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
     position: relative;
-
 }
 
 img.avatar {
     width: 30%;
     margin-top: 20px;
+    user-select: none;
 }
 
 .container {
     padding: 16px;
     border-radius: 0px 0px 17px 17px;
-    
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bde7ff;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #bde7ff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #bde7ff;
 }
 
 span.psw {
     float: right;
     padding-top: 16px;
 }
-
-
 
 /* Modal Content/Box */
 .modal-content {
@@ -166,7 +163,6 @@ span.psw {
     border: 3px solid white;
     width: 400px; /* Could be more or less, depending on screen size */
     height: 500px;
-    
 }
 
 .hilfebtn {
@@ -267,6 +263,22 @@ span.psw {
     }
 }
 
+@media screen and (max-height: 600px) {
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+        background: -webkit-linear-gradient(#{$randomAngle}deg, #197bb3, #197bb3);
+        background: linear-gradient( #197bb3, #197bb3);
+    }
+
+    .modal-content {
+        border: 3px solid #197bb3;
+        width: 90%; /* Could be more or less, depending on screen size */
+        height: 500px;
+    }
+}
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -297,6 +309,7 @@ input[type=text], input[type=password] {
     font-weight: bold;
     margin-top: 30px;
 }
+
     .loginbtn:hover {
         background-color: #197bb3;
         box-shadow: 0px 0px 0px 3px white inset;
@@ -314,7 +327,6 @@ input[type=text], input[type=password] {
     font-size: 20px;
     transition: ease-in-out 0.2s;
     outline: none;
- 
 }
 
     .cancelbtn:hover {
