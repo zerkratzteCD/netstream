@@ -27,7 +27,7 @@ body {
     overflow: hidden;
     background-color: #197BB3;
     transition-duration: 0.5s;
-    height: 48px;
+    
 }
 
     .topnav a {
@@ -41,6 +41,7 @@ body {
         font-weight: bold;
         transition-duration: 0.2s;
         font-family: "Arial", Times, Sans-serif;
+        height: 48px;
     }
 
         .topnav a:hover {
@@ -51,9 +52,7 @@ body {
         .topnav a.active {
             background-color: #323232;
             color: white;
-            margin-bottom: 20px;
             transition-duration: 0.2s;
-            
         }
 
     .topnav .search-container {
@@ -136,17 +135,12 @@ body {
             text-align: left;
         }
 
-    .search-container {
-        margin-bottom: 10px;
-        margin-top: -5px;
-        outline: none;
-    }
-
     .topnav input[type=text] {
         border-radius: 5px;
         width: 97%;
         margin-left: 1.5%;
         outline-width: 0;
+        margin-bottom: 10px;
     }
 
     .topnav .search-container button {
@@ -294,8 +288,6 @@ p {
         background-size: cover;
     }
 
-  
-
 .seite:hover {
     margin-left: 60px;
 }
@@ -357,11 +349,10 @@ p {
 }
 
 anmeldenbtn {
-    color: #ffd014;
 }
 
 .anmeldenbtn:hover {
-    color: #ffce0a;
+    color: #ffae00;
 }
 
 .textfeld {
@@ -483,10 +474,10 @@ span.ang {
         cursor: pointer;
     }
 
-.loadings{
-    height: 20px; 
-    float: right; 
-    margin-top: 5px; 
+.loadings {
+    height: 20px;
+    float: right;
+    margin-top: 5px;
     margin-right: 5px;
 }
 
