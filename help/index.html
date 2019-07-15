@@ -5,7 +5,7 @@
     <!--hilfeseite-->
     <meta charset="UTF-8">
     <title>netstream.to | Hilfe</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,7 +13,7 @@
 
 <body>
     <div class="topnav" id="myTopnav">
-        <a href="../" class="active2"><img src="../images/logov2.png" height="25" width="100" style="position:center; margin-bottom: -10px; margin-top: -10px" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+        <a href="../" class="active2" onmouseover="hover();" onmouseout="unhover();"><img id="netstreambild" src="../../images/logov2.png" height="25" width="100" style="position:center; margin-bottom: -10px; margin-top: -10px" /></a>
         <a href="../user/login">Login</a>
         <a href="../user/register">Registrieren</a>
         <a style="color: #b3e3ff; cursor: default" ; user-select: none;>Hilfe</a>
@@ -23,7 +23,7 @@
         </a>
     </div>
 
-    <div class="animate" style="margin-top: 50px">
+    <div style="margin-top: 50px">
 
         <button class="accordion"><img src="../images/forgotpassword.svg" class="forgotimg" style="width: 35px; float: left"><img/>  Passwort zurücksetzen</button>
         <div class="panel">
@@ -46,12 +46,15 @@
 
 <script>
 
-    function hover(element) {
-        element.setAttribute('src', '../images/logov2hover.png');
+    function hover() {
+
+        document.getElementById("netstreambild").src = "../images/logov2hover.png";
+
     }
 
     function unhover(element) {
-        element.setAttribute('src', '../images/logov2.png');
+        document.getElementById("netstreambild").src = "../images/logov2.png";
+
     }
 
     function myFunctionResp() {
