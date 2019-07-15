@@ -242,6 +242,7 @@ input[type=text], input[type=password] {
     border-radius: 0px 0px 10px 10px;
     color: grey;
     font-weight: bold;
+    color: #197bb3;
 }
 
 @media screen and (max-width: 620px) {
@@ -274,6 +275,7 @@ input[type=text], input[type=password] {
         background-color: #70cbff;
         color: white;
         user-select: none;
+        
     }
 
     
