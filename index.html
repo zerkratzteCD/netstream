@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!--startseite-->
     <meta charset="UTF-8">
     <title>netstream.to</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -12,7 +13,7 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="" class="active"><img src="images/logov2.png" height="25" width="100" onmouseover="hover(this);" onmouseout="unhover(this);" /></a>
+        <a href="" class="active" onmouseover="hover();" onmouseout="unhover();"><img id="netstreambild" src="../../images/logov2.png" height="25" width="100" style="position:center; margin-bottom: -10px; margin-top: -10px" /></a>
         <a href="#news">Serien</a>
         <a href="#contact">Filme</a>
         <a href="user/login" class="anmeldenbtn" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color='#f2f2f2'">Anmelden</a>
@@ -27,30 +28,7 @@
         </a>
     </div>
 
-    <div id="id01" class="modal">
-
-        <form class="modal-content animate" action="/action_page.php">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="schließen">&times;</span>
-                <img src="images/img_avatar2.svg" alt="Avatar" class="avatar">
-            </div>
-
-            <div class="container">
-                <label for="uname" style="color: #197bb3;"><b>Benutzer</b></label>
-                <input type="text" class="textfeld" placeholder="Benutzername" name="uname" required>
-
-                <label for="psw" style="color: #197bb3"><b>Passwort</b></label>
-                <input type="password" class="textfeld" placeholder="Passwort" name="psw" required>
-
-                <span class="psw">Passwort vergessen?</span>
-
-                <button class="button1" type="submit">Anmelden</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-top: 10px; user-select: none;"> <span class="ang">angemeldet bleiben</span>
-                </label>
-            </div>
-        </form>
-    </div>
+    
 
     <div class="derzeitbeliebt">
         DERZEIT BELIEBT
@@ -248,12 +226,15 @@
 
     }
 
-    function hover(element) {
-        element.setAttribute('src', 'images/logov2hover.png');
+    function hover() {
+
+        document.getElementById("netstreambild").src = "images/logov2hover.png";
+
     }
 
     function unhover(element) {
-        element.setAttribute('src', 'images/logov2.png');
+        document.getElementById("netstreambild").src = "images/logov2.png";
+
     }
 
     function myFunction(name, bild, quelle) {

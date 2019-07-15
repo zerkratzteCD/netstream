@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
-    background: -webkit-linear-gradient(#{$randomAngle}deg, #333333, #1d1e22);
+    background: -webkit-linear-gradient(#333333, #1d1e22);
     background: linear-gradient( #333333, #1d1e22);
 }
 
@@ -255,7 +255,7 @@ p {
         position: absolute;
         top: 50%;
         left: 50%;
-        display: #000;
+
     }
 
     .tile__details:after {
@@ -288,6 +288,7 @@ p {
         background-size: cover;
     }
 
+
 .seite:hover {
     margin-left: 60px;
 }
@@ -307,15 +308,15 @@ p {
     transform: translate3d(-62.5px, 0, 0);
 }
 
-    .row__inner:hover .tile {
-        opacity: 0.3;
-    }
+.row__inner:hover .tile {
+    opacity: 0.3;
+}
 
-        .row__inner:hover .tile:hover {
-            -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-            opacity: 1;
-        }
+.row__inner:hover .tile:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 1;
+}
 
 .tile:hover ~ .tile {
     -webkit-transform: translate3d(125px, 0, 0);
@@ -348,8 +349,7 @@ p {
     -ms-user-select: none;
 }
 
-anmeldenbtn {
-}
+
 
 .anmeldenbtn:hover {
     color: #ffae00;
@@ -366,25 +366,7 @@ anmeldenbtn {
     outline: none;
 }
 
-/* Center the image and position the close button */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-    user-select: none;
-}
 
-img.avatar {
-    width: 40%;
-    user-select: none;
-    margin-top: 40px;
-    pointer-events: none;
-}
-
-.container {
-    padding: 16px;
-    border-radius: 0px 0px 20px 20px;
-}
 
 span.psw {
     float: right;
@@ -397,9 +379,9 @@ span.psw {
     transition-duration: 0.2s;
 }
 
-    span.psw:hover {
-        color: #70cbff;
-    }
+span.psw:hover {
+    color: #70cbff;
+}
 
 span.ang {
     float: right;
@@ -412,92 +394,4 @@ span.ang {
     transition-duration: 0.2s;
 }
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    transition-duration: 0.5s;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
 
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 390px;
-    border-radius: 20px;
-    min-width: 270px;
-    border: 3px solid #197bb3;
-    position: relative;
-}
-
-.button1 {
-    background-color: #70cbff;
-    color: white;
-    padding: 14px 20px;
-    margin: 5px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    transition-duration: 0.5s;
-    border-radius: 10px;
-    border: 3px solid #197bb3;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-    .button1:hover {
-        opacity: 0.8;
-    }
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 35px;
-    top: 0;
-    color: #197bb3;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-    .close:hover,
-    .close:focus {
-        color: #70cbff;
-        cursor: pointer;
-    }
-
-
-
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.3s;
-    animation: animatezoom 0.3s
-}
-
-@-webkit-keyframes animatezoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes animatezoom {
-    from {
-        transform: scale(0)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}
