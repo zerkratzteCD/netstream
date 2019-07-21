@@ -1,0 +1,138 @@
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #232b31;
+}
+
+.header{
+  width: 100%;
+  position: fixed;
+  height: 68px;
+  background-color: #141414;
+  -webkit-box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 23px -1px rgba(0,0,0,0.75);
+  z-index: 999;
+
+}
+
+.header .logo{
+  height: 35px;
+  margin-top: 16px;
+  margin-left: 76px;
+  float: left;
+  cursor: pointer;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.header .header-right{
+  float: right;
+
+}
+
+.header .loginbtn {
+    background-color: #23587e;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: ease-in-out 0.2s;
+    outline: none;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 45px; 
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+.header .loginbtn:hover {
+    background-color: #327cb1;
+    box-shadow: 0px 0px 0px 2px white inset;
+}
+
+.suche{
+
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  color: white;
+  background-color: #191c1f;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  float: right;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.suche .material-icons{
+  
+  color: white;
+  vertical-align:middle;
+}
+
+.suche input, .suche input::-webkit-input-placeholder{
+  border:none;
+  background:none;
+  color: #8d8d8d;
+  vertical-align:middle;
+  font:20px ubuntu;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+.suche input{
+  color: #f0f0f0;
+  margin-left:10px;
+  width: 95%;
+}
+.suche input:focus{
+  outline:none;
+  color: white;
+  border: 0;
+  background: transparent;
+
+}
+
+
+.suche form{
+  display:inline-block;
+}
+
+.respmenu{
+  display: none;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  margin-top: 16px;
+  margin-left: 20px;
+  cursor: pointer;
+  background-image: url(images/respmenu.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  transition-duration: 0.5s;
+}
+
+.respmenu:hover{
+  background-image: url(images/respmenuhover.svg);
+
+}
+
+.header .searchresp{
+  display: none;
+  height: 35px;
+  width: 35px;
+  margin-top: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  float: right;
+  background-image: url(images/search.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  transition-duration: 0.5s;
+}
+
+.header .searchresp:hover{
+  background-image: url(images/searchhover.svg);
+
+}

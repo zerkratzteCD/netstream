@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web|Ubuntu|Droid+Sans|Cabin);
+
+.sidenav {
+  height: 100%;
+  width: 270px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #191c1f;
+  overflow-x: hidden;
+  padding-top: 90px;
+}
+
+.sidenav a {
+  padding:13px;
+  text-decoration: none;
+  font:20px ubuntu;
+  color:rgb(216, 231, 241);
+  display: block;
+  padding-left:50px;
+  transition-duration: 0.1s;
+}
+
+
+.sidenav a:hover {
+  color: #47B1FC;
+}
+
+.main {
+  margin-left: 237px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 90px;
+
+}
+
+#menu-divider{
+  width:80%;
+  height:1px;
+  background:rgb(45, 48, 51);
+  margin-left:10%;
+  margin-top:10px;
+  margin-bottom: 10px;
+  border-radius:1px;
+}
+
+.anmeldeinfo{
+  
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid #7fccfd;
+  background-color: #191c1f;
+  margin-bottom: 15px;
+  font:15px ubuntu;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.anmeldeinfo:hover{
+  border: 2px solid #7fccfd;
+  background-color: #191c1f;
+  color: #d33d1d;
+}
+
+.loginbtnresp{
+  display: none;
+}
+
+.regbtnresp{
+  display: none;
+}
+
+.helpbtnresp{
+  display: none;
+}
+
